@@ -23,7 +23,7 @@ namespace ConsoleTestRunner
         {
             if (!File.Exists(projectFile))
             {
-                throw new ArgumentException(projectFile, 
+                throw new ArgumentException(projectFile,
                     "The file does not exits or the 'projectFile' is not valid.");
             }
 
@@ -35,12 +35,12 @@ namespace ConsoleTestRunner
 
                 xmldoc.Load(projectFile);
 
-                XmlElement root = xmldoc.DocumentElement; 
+                XmlElement root = xmldoc.DocumentElement;
 
                 // Now, handle the "case" nodes
                 XmlNodeList elemList = xmldoc.GetElementsByTagName("test");
                 for (int i = 0; i < elemList.Count; i++)
-                {   
+                {
                     XmlNode element = elemList[i];
                     if (element != null)
                     {
@@ -74,14 +74,14 @@ namespace ConsoleTestRunner
                             if (attInteractive != null)
                             {
                                 bInteractive = Boolean.Parse(attInteractive.InnerText);
-                            }   
+                            }
                         }
 
                         XmlNodeList elemFiles = element.SelectNodes("files/file");
                         if (elemFiles != null)
                         {
                             for (int j = 0; j < elemFiles.Count; j++)
-                            { 
+                            {
                                 XmlNode xmlFile = elemFiles[j];
                                 if (xmlFile != null)
                                 {
@@ -93,14 +93,14 @@ namespace ConsoleTestRunner
 
                                     collection.Add(info);
                                 }
-                            } 
+                            }
                         }
- 
+
                         XmlNodeList elemDirs = element.SelectNodes("dirs/dir");
                         if (elemDirs != null)
                         {
                             for (int k = 0; k < elemDirs.Count; k++)
-                            { 
+                            {
                                 XmlNode xmlDir = elemDirs[k];
                                 if (xmlDir != null)
                                 {
@@ -112,7 +112,7 @@ namespace ConsoleTestRunner
 
                                     collection.Add(info);
                                 }
-                            } 
+                            }
                         }
                     }
                 }
@@ -164,7 +164,7 @@ namespace ConsoleTestRunner
                 bDisplayException   = (strException == "true");
             }
 
-            // 4. Handle the verbose display option 
+            // 4. Handle the verbose display option
             bool bVerbose = true;
             if (commandLine["verbose"] != null)
             {
@@ -174,7 +174,7 @@ namespace ConsoleTestRunner
                 bVerbose   = (strVerbose == "true");
             }
 
-            // 4. Handle the interactivity option 
+            // 4. Handle the interactivity option
             bool bInteractive = false;
             if (commandLine["interactive"] != null)
             {
@@ -202,7 +202,7 @@ namespace ConsoleTestRunner
                 Console.WriteLine(strFiles);
 
                 string[] strSplits = strFiles.Split(',');
-    
+
                 for (int i = 0; i < strSplits.Length; i++)
                 {
                     TestInfo info    = new TestInfo(testType);
@@ -221,7 +221,7 @@ namespace ConsoleTestRunner
                 string strDirs = commandLine["dirs"];
 
                 string[] strSplits = strDirs.Split(',');
-    
+
                 for (int i = 0; i < strSplits.Length; i++)
                 {
                     TestInfo info    = new TestInfo(testType);

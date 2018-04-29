@@ -21,7 +21,7 @@ namespace NetTopologySuite.Features
         /// <summary>
         ///     Gets the features.
         /// </summary>
-        /// <value>The features.</value>        
+        /// <value>The features.</value>
         public Collection<IFeature> Features { get; private set; }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace NetTopologySuite.Features
         /// </summary>
         /// <value>
         ///     The type of the object.
-        /// </value>        
+        /// </value>
         public string Type { get; private set; }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace NetTopologySuite.Features
         /// </summary>
         /// <value>
         /// The Coordinate Reference System Objects.
-        /// </value>        
+        /// </value>
         public ICRSObject CRS { get; set; }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace NetTopologySuite.Features
         /// Removes the specified feature.
         /// </summary>
         /// <param name="feature">The feature.</param>
-        /// <returns>true if item is successfully removed; otherwise, false. This method also returns 
+        /// <returns>true if item is successfully removed; otherwise, false. This method also returns
         /// false if item was not found in the collection.</returns>
         public bool Remove(IFeature feature)
         {
@@ -101,7 +101,7 @@ namespace NetTopologySuite.Features
         /// </summary>
         /// <value>
         /// A <see cref="Envelope"/> describing the bounding box or <value>null</value>.
-        /// </value>        
+        /// </value>
         public Envelope BoundingBox
         {
             get

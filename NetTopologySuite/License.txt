@@ -2,7 +2,7 @@ NetTopologySuite is a collection of .NET classes written in C# that
 implement the fundamental operations required to validate a given
 geo-spatial data set to a known topological specification.
 
-This collection of classes is a porting (with some additions and modifications) of 
+This collection of classes is a porting (with some additions and modifications) of
 JTS Topology Suite (see next license for more informations).
 
 Copyright (C) 2005-2014 NetTopologySuite team
@@ -43,7 +43,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 For more information, please visit: http://sourceforge.net/projects/jts-topo-suite/
 
 
-    
+
 
 **Copy of SharpMap license**
 
@@ -59,15 +59,15 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with SharpMap; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 For more information, please visit: https://sharpmap.codeplex.com
-    
+
 
 
 
 **Copy of GeoTools.Net license**
 
-Copyright (C) 2002 Urban Science Applications, Inc. (translated from Java Topology Suite, 
+Copyright (C) 2002 Urban Science Applications, Inc. (translated from Java Topology Suite,
 Copyright 2001 Vivid Solutions)
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -87,9 +87,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **Copy of RTools.Util license**
 
 Copyright (C) 2003 Ryan Seghers
-This software is provided AS IS. No warranty is granted, 
+This software is provided AS IS. No warranty is granted,
 neither expressed nor implied. USE THIS SOFTWARE AT YOUR OWN RISK.
-NO REPRESENTATION OF MERCHANTABILITY or FITNESS FOR ANY 
+NO REPRESENTATION OF MERCHANTABILITY or FITNESS FOR ANY
 PURPOSE is given.
 License to use this software is limited by the following terms:
 1) This code may be used in any program, including programs developed
@@ -102,7 +102,7 @@ author.
 
 ** The .Net 2.0 Framework and the PCL Profile used for NetTopologySuite
 are lacking fundamental collection classes. These have been included by
-backporting them from .NET Foundational classes (CoreFX), released under 
+backporting them from .NET Foundational classes (CoreFX), released under
 MIT License (MIT)
 
 The MIT License (MIT)
@@ -129,7 +129,7 @@ SOFTWARE.
 
 
 
-** 'PriorityQueueNode' and 'AlternativePriorityQueue' are derived from 
+** 'PriorityQueueNode' and 'AlternativePriorityQueue' are derived from
 BlueRaja's "High Speed Priority Queue for C#", released under MIT License (MIT) **
 
 Copyright (c) 2013 Daniel "BlueRaja" Pflughoeft

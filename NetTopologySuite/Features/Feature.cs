@@ -37,7 +37,7 @@ namespace NetTopologySuite.Features
         /// Creates an instance of this class
         /// </summary>
         public Feature() { }
-        
+
         /// <summary>
         /// Geometry representation of the feature.
         /// </summary>
@@ -62,7 +62,7 @@ namespace NetTopologySuite.Features
         /// </summary>
         /// <value>
         /// A <see cref="Envelope"/> describing the bounding box or <value>null</value>.
-        /// </value>        
+        /// </value>
         public Envelope BoundingBox
         {
             get

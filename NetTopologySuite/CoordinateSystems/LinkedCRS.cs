@@ -20,7 +20,7 @@
         /// </summary>
         /// <param name="href">The mandatory <see href="http://geojson.org/geojson-spec.html#linked-crs">href</see> member must be a dereferenceable URI.</param>
         /// <param name="type">The optional type member will be put in the properties Dictionary as specified in the <see href="http://geojson.org/geojson-spec.html#linked-crs">GeoJSON spec</see>.</param>
-        public LinkedCRS(Uri href, string type = "")            
+        public LinkedCRS(Uri href, string type = "")
         {
             if (href == null)
                 throw new ArgumentNullException("href");
@@ -31,6 +31,6 @@
                 this.Properties.Add("type", type);
 
             this.Type = CRSTypes.Link;
-        }        
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace NetTopologySuite.Tests.Various
     {
         private readonly IGeometryFactory factory = GeometryFactory.Default;
 
-        private WKTReader reader;        
+        private WKTReader reader;
 
         [TestFixtureSetUp]
         public void FixtureSetup()

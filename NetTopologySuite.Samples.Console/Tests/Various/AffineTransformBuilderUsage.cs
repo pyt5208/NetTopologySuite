@@ -103,7 +103,7 @@ namespace NetTopologySuite.Samples.Tests.Various
 
                 mean.X = Math.Round(mean.X/count, MidpointRounding.AwayFromZero);
                 mean.Y = Math.Round(mean.Y/count, MidpointRounding.AwayFromZero);
-                
+
                 return mean;
             }
 
@@ -288,13 +288,13 @@ namespace NetTopologySuite.Samples.Tests.Various
             }
         }
 
-        
+
         private string _currentDirectory;
 
         [TestFixtureSetUp]
         public void FixtureSetUp()
         {
-            _currentDirectory = Environment.CurrentDirectory; 
+            _currentDirectory = Environment.CurrentDirectory;
             Environment.CurrentDirectory = @"D:\temp\VAM\VAM_ikk";
         }
 

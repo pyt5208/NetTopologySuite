@@ -21,8 +21,8 @@ namespace NetTopologySuite.Features
         //private const int IndexValue = 0;
 
         /// <summary>
-        /// Gets or sets a value indicating if setting <see cref="this[string]"/> with a 
-        /// nonexistant index will throw an exception or if the attribute/value pair will 
+        /// Gets or sets a value indicating if setting <see cref="this[string]"/> with a
+        /// nonexistant index will throw an exception or if the attribute/value pair will
         /// silently be added.
         /// </summary>
         public static bool AddAttributeWithIndexer { get; set; }
@@ -94,7 +94,7 @@ namespace NetTopologySuite.Features
         public int Count => _attributes.Count;
 
         /// <summary>
-        /// Returns a <c>string</c> array containing 
+        /// Returns a <c>string</c> array containing
         /// all names of present attributes.
         /// </summary>
         /// <returns></returns>
@@ -108,7 +108,7 @@ namespace NetTopologySuite.Features
         }
 
         /// <summary>
-        /// Returns a <c>object</c> array containing 
+        /// Returns a <c>object</c> array containing
         /// all values of present attributes.
         /// </summary>
         /// <returns></returns>
@@ -132,21 +132,21 @@ namespace NetTopologySuite.Features
         }
 
         /// <summary>
-        /// Build a field with the given value and add it to attributes table.        
+        /// Build a field with the given value and add it to attributes table.
         /// </summary>
-        /// <param name="attributeName">Name of the new attribute.</param>        
+        /// <param name="attributeName">Name of the new attribute.</param>
         /// <param name="attributeValue">Value for attribute (can be null).</param>
         /// <exception cref="ArgumentException">If attribute already exists.</exception>
         [Obsolete("Use Add method. This method is here to serve IAttributesTable interface")]
         public void AddAttribute(string attributeName, object attributeValue)
         {
             Add(attributeName, attributeValue);
-        }        
+        }
 
         /// <summary>
         /// Delete the specified attribute from the table.
         /// </summary>
-        /// <param name="attributeName"></param>       
+        /// <param name="attributeName"></param>
         public virtual void DeleteAttribute(string attributeName)
         {
             if (!Exists(attributeName))
@@ -155,7 +155,7 @@ namespace NetTopologySuite.Features
         }
 
         /// <summary>
-        /// Return the <c>System.Type</c> of the specified attribute, 
+        /// Return the <c>System.Type</c> of the specified attribute,
         /// useful for casting values retrieved with GetValue methods.
         /// </summary>
         /// <param name="attributeName"></param>
@@ -216,7 +216,7 @@ namespace NetTopologySuite.Features
         /// Method to merge this attribute table with another attribute table
         /// </summary>
         /// <param name="other">The other attribute table</param>
-        /// <param name="preferThis">A value indicating if values in this attribute table are preferable 
+        /// <param name="preferThis">A value indicating if values in this attribute table are preferable
         /// over those in <paramref name="other"/>.  The default is <value>true</value>.
         /// </param>
         public void MergeWith(IAttributesTable other, bool preferThis = true)
@@ -234,9 +234,9 @@ namespace NetTopologySuite.Features
         }
 
         /// <summary>
-        /// Add a field with the given value and add it to attributes table.        
+        /// Add a field with the given value and add it to attributes table.
         /// </summary>
-        /// <param name="attributeName">Name of the new attribute.</param>        
+        /// <param name="attributeName">Name of the new attribute.</param>
         /// <param name="attributeValue">Value for attribute (can be null).</param>
         /// <exception cref="ArgumentException">If attribute already exists.</exception>
         public void Add(string attributeName, object attributeValue)
