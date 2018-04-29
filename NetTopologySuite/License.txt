@@ -42,9 +42,6 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 For more information, please visit: http://sourceforge.net/projects/jts-topo-suite/
 
-
-
-
 **Copy of SharpMap license**
 
 Copyright 2005, 2014 - SharpMap team
@@ -62,9 +59,6 @@ along with SharpMap; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 For more information, please visit: https://sharpmap.codeplex.com
 
-
-
-
 **Copy of GeoTools.Net license**
 
 Copyright (C) 2002 Urban Science Applications, Inc. (translated from Java Topology Suite,
@@ -81,9 +75,6 @@ You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-
-
-
 **Copy of RTools.Util license**
 
 Copyright (C) 2003 Ryan Seghers
@@ -97,8 +88,6 @@ License to use this software is limited by the following terms:
 Also, in return for using this code, please attempt to make your fixes and
 updates available in some way, such as by sending your updates to the
 author.
-
-
 
 ** The .Net 2.0 Framework and the PCL Profile used for NetTopologySuite
 are lacking fundamental collection classes. These have been included by
@@ -126,8 +115,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
 
 ** 'PriorityQueueNode' and 'AlternativePriorityQueue' are derived from
 BlueRaja's "High Speed Priority Queue for C#", released under MIT License (MIT) **

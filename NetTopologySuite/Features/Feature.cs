@@ -56,7 +56,6 @@ namespace NetTopologySuite.Features
             set => _attributes = value;
         }
 
-
         /// <summary>
         /// Gets or sets the (optional) <see href="http://geojson.org/geojson-spec.html#geojson-objects"> Bounding box (<c>bbox</c>) Object</see>.
         /// </summary>

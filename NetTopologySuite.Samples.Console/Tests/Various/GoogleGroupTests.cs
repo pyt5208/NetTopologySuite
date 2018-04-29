@@ -18,7 +18,6 @@ namespace NetTopologySuite.Tests.Various
     using NetTopologySuite.IO;
     using GeoAPI.Geometries;
 
-
     [TestFixture]
     public class GoogleGroupTests : BaseSamples
     {

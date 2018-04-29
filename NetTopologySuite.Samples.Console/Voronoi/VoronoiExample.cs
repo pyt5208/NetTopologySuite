@@ -50,7 +50,6 @@ namespace NetTopologySuite.Samples.Voronoi
                 Console.WriteLine("Voronoi {0}: Contains {1}? {2}", i++, voronoiCell.UserData,
                     voronoiCell.Contains(factory.CreatePoint((Coordinate) voronoiCell.UserData)));
 
-
             }
 
             // draw sites

@@ -11,9 +11,6 @@ Inserted the poly into the database:
     SELECT a.geometry.get_wkt(), a.blname FROM dkmt.pol_bundesland a WHERE ((a.blname = '12.Bundesland')) --> wkt.jpg
     SELECT a.geometry.get_wkb(), a.blname FROM dkmt.pol_bundesland a WHERE ((a.blname = '12.Bundesland')) --> blob,wkb_blob.jpg
 
-
-
-
 In c# I did the following to get the geometries - I just tried the basic stuff...
 
 Oracle Test 1: Works fine with both wkb and wkt
@@ -24,8 +21,6 @@ Oracle Test 1: Works fine with both wkb and wkt
 	    byte[] wkb = (byte[])cmd.ExecuteScalar();
 	    //string wkt = (string)cmd.ExecuteScalar();
 
-
-
 	    OracleCommand cmdGeom = new OracleCommand(@"insert into dkmt.pol_bundesland values (sdo_geometry(:geom,31297),'14.Bundesland',14)", conn);
 	    OracleParameter p1 = new OracleParameter(":geom",OracleDbType.Blob);
             p1.Value = wkb;
@@ -35,19 +30,13 @@ Oracle Test 1: Works fine with both wkb and wkt
             int i = cmdGeom.ExecuteNonQuery();
             conn.Close();
 
-
-
 SharpMap:
 	SharpMap.Geometries.Polygon mygeom = SharpMap.Geometries.Polygon.GeomFromWKB(wkb, 31297) as SharpMap.Geometries.Polygon; --> WORKS
-
-
 
 NetTopologySuite: (maybe it fails because I didn't define the srid ???)
 	 GeometryFactory fact = new GeometryFactory();
          WKBReader wkbreader = new WKBReader(fact);
  	 GisSharpBlog.NetTopologySuite.Geometries.Geometry a = wkbreader.Read(wkb);   //Error: Should never reach here! 50331648
-
-
 
 With SharpMap WKB Insert doesn't work
 

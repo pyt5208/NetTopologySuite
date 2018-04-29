@@ -16,7 +16,6 @@ namespace NetTopologySuite.CoordinateSystems.Transformations
             return new[] { x, y };
         }
 
-
 	    /// <summary>
 		/// Transforms a <see cref="Envelope" /> object.
 		/// </summary>
